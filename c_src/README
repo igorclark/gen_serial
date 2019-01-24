@@ -1,0 +1,17 @@
+UNIX Native Code
+----------------
+
+The code is POSIX compatible so it should compile without too much
+hassle on a number of UNIX-like platforms besides Linux where it has been
+developed and tested. Comments/patches welcome if you manage to do so.
+
+There is a Makefile in the posix/ subdirectory, so assuming you have a
+reasonably sane UNIX development environment (make, cc, etc.) you
+should be able to simply issue 'make' and obtain the serial_esock
+executable. This executable will be copied to the priv/bin directory
+automatically.
+
+Note: it is expected that compiling programs from source does not pose
+significant inconveniences to anyone. For this reason, and the fact
+that distributing executable binaries is not a generally feasible
+approach on UNIX platforms, a pre-built binary is NOT distributed.

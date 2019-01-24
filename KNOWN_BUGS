@@ -1,0 +1,8 @@
+----------------------------------------------------------------------
+gen_serial:recv/2 and gen_serial:recv/3 don't work.
+
+These functions are not implemented yet in the native C driver, so
+they can't supported in the Erlang code.  But they are spec'd in the
+API. Just keep the port in {active, true} mode at all times and use
+the messages delivered to get the data.
+----------------------------------------------------------------------

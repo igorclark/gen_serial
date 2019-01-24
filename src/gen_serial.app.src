@@ -1,0 +1,25 @@
+%% vim: ft=erlang:
+{ application, gen_serial,
+ [ { description, "generic POSIX serial port driver" },
+  { vsn, "0.1.0" },
+  { registered, [] },
+  { applications,
+   [ kernel,
+    stdlib
+   ] },
+  { env, [] },
+  { modules, [] },
+
+  { maintainers, [ "Igor Clark"] },
+  { licenses, [ "Erlang Public License" ] },
+  { links, [ { "github", "https://github.com/igorclark/gen_serial" } ] },
+  { files, [
+   "AUTHORS",
+   "EPLICENCE",
+   "KNOWN_BUGS",
+   "README",
+   "c_src",
+   "rebar.config",
+   "src"
+  ] }
+ ] }.
